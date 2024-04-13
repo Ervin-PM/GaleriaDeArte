@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+            <li><a href="#" onclick="mostrarSeccion('galeria')">Galería</a></li>
+            <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="inicio">
+        <h2>Bienvenido a la Galería de Arte</h2>
+        <p>Disfruta de nuestra colección de obras de arte.</p>
+    </section>
+
+    <section id="galeria" style="display: none;">
+        <h2>Galería de Fotos</h2>
+        <!-- Aquí irían las imágenes de la galería -->
+    </section>
+
+    <section id="contacto" style="display: none;">
+        <h2>Contacto</h2>
+        <form id="formularioContacto" onsubmit="return validarFormulario()">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <span id="errorNombre" class="error"></span>
+            </div>
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="errorEmail" class="error"></span>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <span id="errorTelefono" class="error"></span>
+                <small>Formato: 123-456-7890</small>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensajeExito" style="display: none;">¡Gracias por contactarnos!</div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
