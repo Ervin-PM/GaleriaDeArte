@@ -3,270 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Arte</title>
+    <title>Galería de Arte - Inicio</title>
     <style>
         body {
-            font-family: Optima, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: black;
+            background-color: #f0f0f0;
         }
 
         header {
-            background: linear-gradient(to right, rgb(94, 47, 47), rgb(108, 101, 101), rgba(89, 85, 85, 0.34), rgb(83, 39, 39), #ffcccc);
-            color: black;
-            text-align: left;
+            background-color: #333;
+            color: #fff;
             padding: 20px;
-            box-shadow: 20px 2px 5px rgba(0,0,0,0.1);
-            position: relative;
+            text-align: center;
         }
 
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            display: flex;
-            align-items: center;
-            height: 100%;
+            text-align: center;
         }
 
         nav ul li {
-            margin-right: 50px;
+            display: inline;
+            margin-right: 20px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: navajowhite;
+            color: #fff;
             transition: color 0.3s;
         }
 
         nav ul li a:hover {
-            color: #333;
+            color: #ffcc00;
         }
 
-        .section {
+        .intro {
+            padding: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .carousel-images img {
             display: none;
-            text-align: center;
-            padding: 0px  0px;
-        }
-
-        .active {
-            display: block;
-        }
-
-        .background-image {
-            background-image: url('https://ideogram.ai/api/images/direct/POLI0aBnTUWz2Gr7YVQf_Q.png');
-            background-size:cover;
-            background-attachment: fixed;
-            background-position: center;
-            height: calc(100vh - 70px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        #contacto {
-            background-image: url('https://ideogram.ai/api/images/direct/gzWUXsO9QGyuAFm87RJzKQ.png');
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            padding: 50px  10px;
-            display: run-in;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-
-        .gallery {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            position: relative;
-
-        }
-
-        .gallery img {
-            max-width: 100px;
-            margin: 0 10px;
-            cursor: pointer;
-
-        }
-
-        .carousel {
-            display: flex;
-            margin-top: 20px;
-            margin-left: 10%;
-            position: relative;
-            width: 100%;
-            height: auto;
-        }
-
-        .carousel img {
             max-width: 100%;
-            border: 2px solid #333;
-            border-radius: 5px;
-            display: none; /* Añadido */
         }
 
-        .arrows {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            justify-content: space-between;
-            width: 84.5%;
-            z-index: 1;
-        }
-
-        .arrows button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-
-        .gallery-label {
-            display: none;
-            position: static;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 5px;
-            border-radius: 5px;
-            z-index: 10;
-            text-align: center;
-        }
-
-        .gallery img:hover + .gallery-label {
-            display:block;
+        @media screen and (max-width: 600px) {
+            nav ul {
+                display: block;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 style="color: navajowhite; font-size:40px; margin-left: 33%">Galería de Arte Online</h1>
+    <h1>Galería de Arte</h1>
     <nav>
         <ul>
-            <li style="margin-left: 20%;font-size: 20px"><a href="#inicio" class="active">Inicio</a></li>
-            <li style="margin-left: 20%;font-size: 20px"><a href="#galeria">Galería</a></li>
-            <li style="margin-left: 25%;font-size: 20px"><a href="#contacto">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
-<!-- Sección de Inicio -->
-<section id="inicio" class="section active">
-    <div class="background-image">
-        <h2 style="font-size: 60px; margin-top:-10%; color: chocolate;-webkit-text-stroke:2px;-webkit-text-stroke-color: navajowhite;">Bienvenidos a la Galería <br> de Arte Online</h2>
-    </div>
-</section>
+<div class="intro">
+    <p>Bienvenidos a la Galería de Arte. Descubre una selección excepcional de obras maestras y encuentra tu próxima pieza favorita.</p>
+</div>
 
-<!-- Sección de Galería -->
-<section id="galeria" class="section">
-    <h2 style="color: chocolate;-webkit-text-stroke:2px;-webkit-text-stroke-color: navajowhite; font-size: 35px; margin-left: -5%; ">Galería de Arte</h2>
-    <div class="gallery">
-        <!-- imágenes de la galería -->
-        <img src="img\paisaje.jpg" alt="Paisaje">
-        <span  class="gallery-label">Paisaje</span>
-        <img src="img\Prestancia.png" alt="Prestancia">
-        <span class="gallery-label">Prestancia</span>
-        <img src="img\namecu.png" alt="Namecu">
-        <span class="gallery-label">Namecu</span>
-        <img src="img\flora.png" alt="Flora">
-        <span class="gallery-label">Flora</span>
-        <img src="img\postre.png" alt="Postre">
-        <span class="gallery-label">Postre</span>
-        <!--imágenes -->
-    </div>
-    <div class="carousel">
-        <img src="img\paisaje.jpg" alt="Paisaje">
-        <img src="img\Prestancia.png" alt="Prestancia">
-        <img src="img\namecu.png" alt="Namecu">
-        <img style="margin-left: 10%"; src="img\flora.png" alt="Flora">
-        <img src="img\postre.png" alt="Postre">
-        <!-- imágenes del carrusel -->
-        <div class="arrows">
-            <button id="prev">&#10094;</button>
-            <button id="next">&#10095;</button>
-        </div>
-    </div>
-</section>
+<div class="carousel-images">
+    <img src="imagen1.jpg" alt="Imagen 1">
+    <img src="imagen2.jpg" alt="Imagen 2">
+    <img src="imagen3.jpg" alt="Imagen 3">
+    <!-- Agrega más imágenes aquí -->
+</div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const sections = document.querySelectorAll('.section');
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel-images img');
+    const totalImages = images.length;
 
-        // Manejar la navegación entre secciones
-        document.querySelectorAll('nav a').forEach(item => {
-            item.addEventListener('click', function() {
-                const target = this.getAttribute('href').substring(1);
-                sections.forEach(section => {
-                    if (section.id === target) {
-                        section.classList.add('active');
-                    } else {
-                        section.classList.remove('active');
-                    }
-                });
-            });
-        });
+    function showNextImage() {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % totalImages;
+        images[currentIndex].style.display = 'block';
+    }
 
-        // Mostrar imágenes en el carrusel al hacer clic
-        document.querySelectorAll('.gallery img').forEach(item => {
-            item.addEventListener('click', function() {
-                const src = this.getAttribute('src');
-                document.querySelectorAll('.carousel img').forEach(image => {
-                    if (image.getAttribute('src') === src) {
-                        image.style.display = 'block';
-                    } else {
-                        image.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Control del carrusel
-        const carouselImages = document.querySelectorAll('.carousel img');
-        const prevButton = document.getElementById('prev');
-        const nextButton = document.getElementById('next');
-        let currentIndex = 0;
-
-        prevButton.addEventListener('click', function() {
-            currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
-            showImage(currentIndex);
-        });
-
-        nextButton.addEventListener('click', function() {
-            currentIndex = (currentIndex + 1) % carouselImages.length;
-            showImage(currentIndex);
-        });
-
-        function showImage(index) {
-            carouselImages.forEach(image => {
-                image.style.display = 'none';
-            });
-            carouselImages[index].style.display = 'block';
-        }
-    });
+    setInterval(showNextImage, 5000); // Cambia la imagen cada 5 segundos
 </script>
-
-<!--Contacto-->
-<section id="contacto" class="section">
-    <h2 style="color: floralwhite; font-size:40px; margin-left: -5%;margin-top: 15%; padding: 50px  20px;">Contacto</h2>
-    <form>
-        <label style="color: darkgrey; font-size: 15px; font-weight: bolder; "; for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label style="color: darkgrey; font-size: 15px; font-weight: bolder"; for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label style="color: slategrey; font-size: 15px; font-weight: bolder"; for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</section>
 
 </body>
 </html>

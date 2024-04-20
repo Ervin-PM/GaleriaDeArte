@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte - Galería</title>
+    <style>
+        /* Estilos de la galería */
+        /* ... */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .intro {
+            padding: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .gallery img {
+            max-width: 100px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .carousel {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .carousel img {
+            max-width: 80%;
+        }
+
+        .arrows {
+            margin-top: 10px;
+        }
+
+        .arrows button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            .gallery img {
+                max-width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Galería de Arte</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="gallery">
+    <img src="imagen1.jpg" alt="Paisaje">
+    <img src="imagen2.jpg" alt="Retrato">
+    <img src="imagen3.jpg" alt="Abstracto">
+    <!-- Agrega más imágenes aquí -->
+</div>
+
+<div class="carousel">
+    <img src="imagen1.jpg" alt="Paisaje">
+    <img src="imagen2.jpg" alt="Retrato">
+    <img src="imagen3.jpg" alt="Abstracto">
+    <!-- Agrega más imágenes aquí -->
+    <div class="arrows">
+        <button id="prev">&#10094; Anterior</button>
+        <button id="next">Siguiente &#10095;</button>
+    </div>
+</div>
+
+<script>
+    // JavaScript para el carrusel en la página de galería
+    let galleryIndex = 0;
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const totalGalleryImages = galleryImages.length;
+
+    function showNextGalleryImage() {
+        galleryImages[galleryIndex].style.display = 'none';
+        galleryIndex = (galleryIndex + 1) % totalGalleryImages;
+        galleryImages[galleryIndex].style.display = 'block';
+    }
+
+    setInterval(showNextGalleryImage, 5000); // Cambia la imagen de la galería cada 5 segundos
+</script>
+
+</body>
+</html>
