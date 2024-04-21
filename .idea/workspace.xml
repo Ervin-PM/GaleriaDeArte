@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cd21d44-1846-48c7-9429-71ddc4aeaa10" name="Changes" comment="Ultima versión página de arte">
-      <change afterPath="$PROJECT_DIR$/contacto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/galeria.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Inicio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Prestancia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/flora.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/namecu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/paisaje.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/postre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/galeria.html" beforeDir="false" afterPath="$PROJECT_DIR$/galeria.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,10 +36,14 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Ervin-PM/GaleriaDeArte.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:Ervin-PM/GaleriaDeArte.git&quot;,
     &quot;accountId&quot;: &quot;fc329fba-727d-41f4-9901-e737c6b7c94e&quot;
   }
 }</component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -56,31 +55,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.scripts.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/nodejs/node.exe&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;JavaScript.Libraries&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "Node.js..executor": "Run",
+    "Node.js.scripts.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "20.12.2",
+    "javascript.nodejs.core.library.typings.version": "",
+    "last_opened_file_path": "C:/Program Files/nodejs/npm.cmd",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "C:\\Program Files\\nodejs\\npm.cmd",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JQuery-CSS&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JQuery-CSS"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="scripts.js" type="NodeJSConfigurationType" path-to-node="$PROJECT_DIR$/../../../../../../../Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="scripts.js" working-dir="$PROJECT_DIR$">
+    <configuration type="NodeJSConfigurationType" path-to-node="$PROJECT_DIR$/../../../../../../../Program Files/nodejs/node" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
   </component>
@@ -99,7 +104,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713035090055</updated>
-      <workItem from="1713035091145" duration="48257000" />
+      <workItem from="1713035091145" duration="55763000" />
+      <workItem from="1713656603365" duration="1274000" />
+      <workItem from="1713657950498" duration="14690000" />
     </task>
     <task id="LOCAL-00001" summary="Ultima versión página de arte">
       <option name="closed" value="true" />
@@ -157,11 +164,38 @@
       <option name="project" value="LOCAL" />
       <updated>1713100846638</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ultima versión página de arte">
+      <option name="closed" value="true" />
+      <created>1713648528468</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713648528468</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ultima versión página de arte">
+      <option name="closed" value="true" />
+      <created>1713648667973</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713648667973</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ultima versión página de arte" />

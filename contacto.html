@@ -23,8 +23,10 @@
             background-repeat: no-repeat;
             background-size: 1600px;
             color: #111a75;
-            padding: 20px;
+            padding: .7em;
             text-align: center;
+
+
         }
 
         nav ul {
@@ -49,33 +51,37 @@
             color: #ffcc00;
         }
 
-        .intro {
-            padding: 50px;
-            text-align: center;
-            font-size: 20px;
-        }
 
         input[type="text"],
         input[type="email"],
         select,
         textarea,
+        option,
         button {
-
-            padding: 10px;
-            margin-bottom: 10px;
-            box-sizing: content-box;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-wrapper {
-            box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-        }
-
-        button {
-            background-color: #98e8e1;
-            color: #111a75;
+            width: 100%;
+            padding: .7em;
             border: none;
+            border-bottom: 1px solid #98e8e1;
+            background: none;
+            outline: 0;
+            color: #ffffff;
+            box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+        }
+
+
+
+        button {
+            background: none;
+            color: #111a75;
+            border: 0;
             cursor: pointer;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration-style: solid;
+            padding: 1em;
+            border-bottom: #66ffd1;
+
         }
 
         @media screen and (max-width: 600px) {
@@ -84,7 +90,7 @@
             select,
             textarea,
             button {
-                width: 30%;
+                width: 100%;
             }
         }
     </style>
@@ -102,24 +108,23 @@
     </nav>
 </header>
 
-<section>
-    <h2>Contacto</h2>
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="solicitud">Tipo de solicitud:</label>
-        <select id="solicitud" name="solicitud" required>
-            <option value="compra">Compra</option>
-            <option value="consulta">Consulta</option>
-            <option value="venta">Venta</option>
+<section style="padding-right: 30em;padding-left: 30em;">
+    <h2 style="text-align: center; color: #111a75; padding: 2em;">Contacto</h2>
+    <form style="box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);margin: 1.5em">
+        <label style="margin-left: 12px; font-weight: bold" for="nombre">Nombre:</label>
+        <input style="padding:0em" type="text" id="nombre" name="nombre" required>
+        <label style="margin-left: 12px; font-weight: bold;" for="email">Correo electrónico:</label>
+        <input style="padding:0em" type="email" id="email" name="email" required>
+        <label style="margin-left: 12px; font-weight: bold;" for="solicitud">Tipo de solicitud:</label>
+        <select style="color: #1e1313; font-weight: bold;" id="solicitud" name="solicitud" required>
+            <option style="background: rgb(170,191,112)" ;  value="compra">Compra</option>
+            <option style="background: rgb(170,191,112)" ; value="consulta">Consulta</option>
+            <option style="background: rgb(170,191,112)" ; value="venta">Venta</option>
         </select>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-        <button type="submit">Enviar</button>
+        <label style="margin-left: 12px; font-weight: bold;" for="mensaje">Mensaje:</label>
+        <textarea style="padding:0em" id="mensaje" name="mensaje" required></textarea>
+        <button  type="submit">Enviar</button>
     </form>
 </section>
-
 </body>
 </html>

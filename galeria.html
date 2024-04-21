@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Arte - Galería</title>
     <style>
-        /* Estilos de la galería */
+        /* Estilos de la página de contacto */
         /* ... */
-
         body {
             font-family: Arial, sans-serif;
+            background-image: url("img/paisaje.jpg");
+            background-repeat: no-repeat;
+            background-size: 1600px;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+            background-color: #1e1313;
+            background-image: url("img/paisaje.jpg");
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: 330vh;
+            color: #111a75;
+            padding: 0;
             text-align: center;
+            margin-top: 80px;
+
+
+
         }
 
         nav ul {
@@ -36,7 +46,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #fff;
+            color: #111a75;
             transition: color 0.3s;
         }
 
@@ -44,45 +54,97 @@
             color: #ffcc00;
         }
 
-        .intro {
-            padding: 50px;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url("img/paisaje.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 330vh;
+        }
+
+        h2{
             text-align: center;
-            font-size: 20px;
+            font-size: 40px;
+            font-family: Arial, sans-serif;
+            margin-top: 80px;
+            color: aqua;
+            text-shadow: 0px 0px 6px black;
         }
 
-        .gallery img {
-            max-width: 100px;
-            margin: 0 10px;
+        .content-all{
+            width: 210px;
+            margin: auto;
+            perspective: 800px;
+            position: relative;
+            margin-top: 90px;
+        }
+
+        .content-carrousel{
+            width: 100%;
+            position: absolute;
+            animation: rotar 10s infinite linear;
+            transform-style: preserve-3d;
+            padding-top: 3em;
+
+        }
+
+        .content-carrousel:hover{
+            animation-play-state: paused;
             cursor: pointer;
         }
 
-        .carousel {
-            display: none;
-            margin-top: 20px;
+
+        .content-carrousel figure{
+            width: 100%;
+            height: 120px;
+            overflow: hidden;
+            position: absolute;
+            box-shadow: 0px 0px 20px 0px black;
+            transition: all 300ms;
+
+
         }
 
-        .carousel img {
-            max-width: 80%;
+        .content-carrousel figure:hover{
+            box-shadow: 0px 0px 0px 0px black;
+            transition: all 300ms;
         }
 
-        .arrows {
-            margin-top: 10px;
+        .content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+        .content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+        .content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+        .content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+        .content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+        .content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+        .content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+        .content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+        .content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+        .content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+        .content-carrousel img{
+            width: 100%;
+            transition: all 300ms;
         }
 
-        .arrows button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            margin: 0 5px;
-            cursor: pointer;
+        .content-carrousel img:hover{
+            transform: scale(1.2);
+            transition: all 300ms;
         }
 
-        @media screen and (max-width: 600px) {
-            .gallery img {
-                max-width: 80px;
-            }
+
+        @keyframes rotar{
+            from{
+                transform: rotateY(0deg);
+            }to{
+                 transform: rotateY(360deg);
+             }
         }
+
     </style>
 </head>
 <body>
@@ -98,38 +160,21 @@
     </nav>
 </header>
 
-<div class="gallery">
-    <img src="imagen1.jpg" alt="Paisaje">
-    <img src="imagen2.jpg" alt="Retrato">
-    <img src="imagen3.jpg" alt="Abstracto">
-    <!-- Agrega más imágenes aquí -->
-</div>
-
-<div class="carousel">
-    <img src="imagen1.jpg" alt="Paisaje">
-    <img src="imagen2.jpg" alt="Retrato">
-    <img src="imagen3.jpg" alt="Abstracto">
-    <!-- Agrega más imágenes aquí -->
-    <div class="arrows">
-        <button id="prev">&#10094; Anterior</button>
-        <button id="next">Siguiente &#10095;</button>
+<div class="content-all">
+    <div class="content-carrousel">
+        <figure><img src="img/flora.png"></figure>
+        <figure><img src="img/Inicio.png"></figure>
+        <figure><img src="img/namecu.png"></figure>
+        <figure><img src="img/paisaje.jpg"></figure>
+        <figure><img src="img/postre.png"></figure>
+        <figure><img src="img/Prestancia.png"></figure>
+        <figure><img src="img/Legion.png"></figure>
+        <figure><img src="img/Musica.png"></figure>
+        <figure><img src="img/Sol%20de%20invierno.png"></figure>
+        <figure><img src="img/Deseo.png"></figure>
     </div>
 </div>
 
-<script>
-    // JavaScript para el carrusel en la página de galería
-    let galleryIndex = 0;
-    const galleryImages = document.querySelectorAll('.gallery img');
-    const totalGalleryImages = galleryImages.length;
-
-    function showNextGalleryImage() {
-        galleryImages[galleryIndex].style.display = 'none';
-        galleryIndex = (galleryIndex + 1) % totalGalleryImages;
-        galleryImages[galleryIndex].style.display = 'block';
-    }
-
-    setInterval(showNextGalleryImage, 5000); // Cambia la imagen de la galería cada 5 segundos
-</script>
-
 </body>
 </html>
+
