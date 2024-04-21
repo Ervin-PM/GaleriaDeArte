@@ -10,20 +10,25 @@
             font-family: Arial, sans-serif;
             background-image: url("img/paisaje.jpg");
             background-repeat: no-repeat;
-            background-size: cover;
+            background-position: center;
+            background-size: 330vh;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
         }
 
         header {
-            background-color: #1e1313;
-            background-image: url("img/paisaje.jpg");
+            background-color: rgba(255, 255, 255, 0);
             background-repeat: no-repeat;
-            background-size: cover;
-            color: #fff;
-            padding: 1em 0;
+            background-size: contain;
             text-align: center;
+            font-size: 25px;
+            font-family: Arial, sans-serif;
+            margin-top: 0px;
+            padding-top: 1em;
+            color: #111a75;
+            text-shadow: 0px 0px 6px black;
+            box-shadow: 0 0 20px rgb(255, 255, 255, 0.3);
         }
 
         nav ul {
@@ -40,7 +45,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #fff;
+            color: #111a75;
             transition: color 0.3s;
         }
 
@@ -52,7 +57,7 @@
         section {
             padding: 0 1em;
             margin: 2em auto;
-            max-width: 630px;
+            max-width: 600px;
         }
 
         h2 {
@@ -82,7 +87,7 @@
             margin-bottom: 1em;
             border: none;
             border-bottom: 1px solid #98e8e1;
-            background: none;
+            background-color: rgba(255, 255, 255, .3);
             outline: 0;
             color: #ffffff;
             box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
@@ -135,10 +140,10 @@
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required>
         <label for="solicitud">Tipo de solicitud:</label>
-        <select id="solicitud" name="solicitud" required>
-            <option value="compra">Compra</option>
-            <option value="consulta">Consulta</option>
-            <option value="venta">Venta</option>
+        <select style="color: #1e1313" id="solicitud" name="solicitud" required>
+            <option style="color: #1e1313" value="compra">Compra</option>
+            <option style="color: #1e1313" value="consulta">Consulta</option>
+            <option style="color: #1e1313" value="venta">Venta</option>
         </select>
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" required></textarea>
