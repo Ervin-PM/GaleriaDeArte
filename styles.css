@@ -1,0 +1,51 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 20px;
+}
+
+.button{
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+
+.button-primary{
+    color: darkblue;
+    background-color: #ffcc00;
+}
+
+.button-primary:hover{
+    background-color: pink;
+    transition: background-color 0.3s;
+
+}
+
+
+.button-secondary{
+    color: white;
+    background-color: #ffcc00;
+}
+
+.button-secondary:hover{
+    background-color: pink;
+    color: darkblue;
+    transition: background-color 0.3s;
+
+}
