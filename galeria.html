@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -186,19 +187,51 @@
 <div class="content-all">
 
     <div class="content-carrousel">
-        <figure><img src="img/flora.png" alt="Flora"></figure>
-        <figure><img src="img/Inicio.png" alt="Inicio"></figure>
-        <figure><img src="img/namecu.png" alt="Namecu"></figure>
-        <figure><img src="img/paisaje.jpg" alt="Paisaje"></figure>
-        <figure><img src="img/postre.png" alt="Postre"></figure>
-        <figure><img src="img/Prestancia.png" alt="Prestancia"></figure>
-        <figure><img src="img/Legion.png" alt="Legion"></figure>
-        <figure><img src="img/Musica.png" alt="Musica"></figure>
-        <figure><img src="img/Sol%20de%20invierno.png" alt="Sol de invierno"></figure>
-        <figure><img src="img/Deseo.png" alt="Deseo"></figure>
+        <figure><img src="img/flora.png"
+                     alt="Flora"></figure>
+        <figure><img  src="img/Inicio.png"
+                     alt="Inicio"></figure>
+        <figure ><img src="img/namecu.png"
+                     alt="Namecu"></figure>
+        <figure><img src="img/paisaje.jpg"
+                      alt="Paisaje"></figure>
+        <figure><img src="img/postre.png"
+                      alt="Postre"></figure>
+        <figure><img src="img/Prestancia.png"
+                      alt="Prestancia"></figure>
+        <figure><img src="img/Legion.png"
+                      alt="Legion"></figure>
+        <figure><img src="img/Musica.png"
+                      alt="Musica"></figure>
+        <figure><img src="img/Sol%20de%20invierno.png"
+                      alt="Sol de invierno"></figure>
+        <figure><img src="img/Deseo.png"
+                      alt="Deseo"></figure>
     </div>
 </div>
 
 </body>
+
+<div class="modal" tabindex="-1" id = "myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalles sobre obra de arte</h5>
+            </div>
+            <div class="modal-body">
+                <p id="textoimg"></p>
+                <img class="img-fluid artwork" id="imgModal" src="" alt="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="closeBtn" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="deleteBtn">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="galeria.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
 
